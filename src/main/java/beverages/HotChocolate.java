@@ -1,8 +1,10 @@
 package beverages;
 
-public class HotChocolate implements Beverage {
-    @Override
-    public double price() {
-        return 1.45;
+public class HotChocolate extends Beverage {
+
+    private static final double PRICE = 1.45;
+
+    public HotChocolate() {
+        super(PRICE);
     }
 }
