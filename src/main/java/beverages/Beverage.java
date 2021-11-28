@@ -13,7 +13,7 @@ public class Beverage {
         this.supplements = supplements;
     }
 
-    public double price(){
+    public double price() {
         return this.price + supplements.stream().map(Supplement::additionalPrice).reduce(0d, Double::sum);
     }
 }

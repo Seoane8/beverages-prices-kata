@@ -56,6 +56,6 @@ public class BeveragesPricingTest {
     public void computes_hot_chocolate_with_cream_price() {
         List<Supplement> supplements = List.of(new Cream());
         Beverage hotChocolateWithCream = new HotChocolate(supplements);
-        assertThat(hotChocolateWithCream.price(),  is(closeTo(1.60, 0.001)));
+        assertThat(hotChocolateWithCream.price(), is(closeTo(1.60, 0.001)));
     }
 }

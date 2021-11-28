@@ -1,6 +1,6 @@
 package supplements;
 
-public class Milk extends Supplement{
+public class Milk extends Supplement {
 
     private static final double PRICE = 0.10;
 
