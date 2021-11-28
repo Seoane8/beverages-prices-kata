@@ -1,8 +1,12 @@
 package beverages;
 
+import supplements.Milk;
+
+import java.util.List;
+
 public class CoffeeWithMilk extends Coffee {
-    @Override
-    public double price() {
-        return super.price() +  0.10;
+
+    public CoffeeWithMilk() {
+        super(List.of(new Milk()));
     }
 }
